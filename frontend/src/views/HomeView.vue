@@ -1,6 +1,7 @@
 <template>
   <div class="home">
    <Count/>
+   <p>Som coin siteda hali coin toplash boshlanmadi. Shuning uchun xatoliklar kuzatilishi mumkin. Keltirilgan noqulayliklar uchun uzr so'raymiz!</p>
   </div>
 </template>
 
@@ -15,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  p{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
