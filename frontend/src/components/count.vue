@@ -23,7 +23,7 @@ export default {
     .gradient-custom{
         width: 100%;
         height: 90vh;
-        background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+        background: #2c3e50;
         padding-top:100px;
         padding-bottom:100px;
     }
