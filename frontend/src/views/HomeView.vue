@@ -1,7 +1,6 @@
 <template>
   <div class="home">
    <Count/>
-   <p>Som coin siteda hali coin toplash boshlanmadi. Shuning uchun xatoliklar kuzatilishi mumkin. Keltirilgan noqulayliklar uchun uzr so'raymiz!</p>
   </div>
 </template>
 

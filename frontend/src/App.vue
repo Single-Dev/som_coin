@@ -6,7 +6,30 @@
   <router-view/>
 </template>
 
-<style lang="scss">
+<script>
+export default {
+    methods:{
+      enterFullScreen(){
+        window.moveTo(0, 0);
+        if (document.all) {
+            top.window.resizeTo(screen.availWidth, screen.availHeight);
+        }
+
+        else if (document.layers || document.getElementById) {
+            if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+                top.window.outerHeight = screen.availHeight;
+                top.window.outerWidth = screen.availWidth;
+            }
+        }
+      }
+    },
+    mounted() {
+      this.enterFullScreen()
+    },
+}
+</script>
+
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
